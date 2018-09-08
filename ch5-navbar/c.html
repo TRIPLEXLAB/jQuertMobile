@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>navbar 사용</title>
+</head>
+<body>
+<!-- page지정(3가지 구성요소) -->
+<div data-role="page">
+   <!--1.header 지정(머리말)  -->
+    <div data-role="header" data-theme="d">
+      <h1>회원 목록 보기</h1>
+    </div>
+   <!--2.content 지정(본문)  -->
+   <div data-role="content">
+      <!-- data-role="collapsible-set"(탐색기 처럼 항목이 트리구조로 펼쳐진다) 
+             data-role="collapsible" ->각각의 항목을 표시
+      -->
+      <div data-role="collapsible-set">
+        <div data-role="collapsible">
+              <h1>홍길동은 어디에 거주하나요?</h1>
+              <p>
+               홍길동은 서울시 강남구에 거주하며 나이는 23살인 학생입니다.
+              </p>
+        </div>
+        <div data-role="collapsible">
+              <h1>이길수란 사람이란?</h1>
+              <p>
+               이길수의 나이는 34살인 웹프로그래머 입니다.
+              </p>
+        </div>
+      </div>
+    </div>
+   <!--3.footer 지정(꼬리말)  -->
+   <div data-role="footer" data-id="persistFooter" data-position="fixed" data-theme="d">
+       <div data-role="navbar">
+        <ul>
+            <li><a href="a.html" data-icon="plus">회원가입</a></li>
+            <li><a href="b.html" data-icon="search">검색</a></li>
+            <li><a href="c.html" data-icon="gear"
+                    class="ui-btn-active ui-state-persist">목록보기</a></li>
+        </ul>
+      </div>
+    </div>
+</div>
+</body>
+</html>
